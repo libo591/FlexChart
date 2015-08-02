@@ -1,0 +1,3 @@
+<config type="lineargauges">
+	<data min="0" max="9" suffix="度" step="9" stepInStep="5" value="6.5" />
+</config>

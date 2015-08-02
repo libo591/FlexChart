@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+    <head>
+        <title></title>
+        <meta name="google" value="notranslate" />         
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style type="text/css" media="screen"> 
+            html, body  { height:100%; }
+            body { margin:0; padding:0; overflow:auto; text-align:center; 
+                   background-color: #ffffff; }   
+            object:focus { outline:none; }
+            #flashContent { display:none; }
+        </style>
+        <link rel="stylesheet" type="text/css" href="history/history.css" />
+        <script type="text/javascript" src="history/history.js"></script>
+        <script type="text/javascript" src="swfobject.js"></script>
+        <script type="text/javascript">
+            var swfVersionStr = "10.1.0";
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {dataFile:"./xml/折线图.xml",format:"xml"};
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#ffffff";
+            params.allowscriptaccess = "sameDomain";
+            params.allowfullscreen = "true";
+            var attributes = {};
+            attributes.id = "bobochart";
+            attributes.name = "bobochart";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "bobochart.swf", "flashContent", 
+                "85%", "100%", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+            swfobject.createCSS("#flashContent", "float:left;display:block;text-align:left;");
+            function loadChart(file,format){
+            	this.findSwf("bobochart").loadFile("./xml/"+file,format);
+            }
+            function findSwf(movieName) {
+				         if (navigator.appName.indexOf("Microsoft") != -1) {
+				             return window[movieName];
+				         } else {
+				             return document[movieName];
+				         }
+		     		}
+		     		
+        </script>
+    </head>
+    <body>
+    		<div style="float:left;width:15%;height:500px;overflow-y:scroll">
+    			<p><a href="javascript:void(0);" onclick="loadChart('折线图.xml','xml')">折线图</a></p>
+    			<p><a href="javascript:void(0);" onclick="loadChart('正负折线图.xml','xml')">正负折线图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('曲线图.xml','xml')">曲线图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('拐点线图.xml','xml')">拐点线图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('单系列多值线图.xml','xml')">单系列多值线图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('多系列线图.xml','xml')">多系列线图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('区域图.xml','xml')">区域图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('正负区域图.xml','xml')">正负区域图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('多系列区域图.xml','xml')">多系列区域图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('柱状图.xml','xml')">柱状图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('正负值柱图.xml','xml')">正负值柱图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('多序列柱图.xml','xml')">多序列柱图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('多轴柱图.xml','xml')">多轴柱图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('条形图.xml','xml')">条形图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('正负值条形图.xml','xml')">正负值条形图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('多序列条形图.xml','xml')">多序列条形图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('柱状堆积.xml','xml')">柱状堆积</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('正负柱状堆积.xml','xml')">正负柱状堆积</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('100%柱状堆积.xml','xml')">100%柱状堆积</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('条形堆积.xml','xml')">条形堆积</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('100%条形堆积.xml','xml')">100%条形堆积</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('散点图.xml','xml')">散点图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('多序列散点图.xml','xml')">多序列散点图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('气泡图.xml','xml')">气泡图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('多序列气泡图.xml','xml')">多序列气泡图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('饼图.xml','xml')">饼图</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('柱状与趋势.xml','xml')">柱状与趋势</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('多轴下的多序列.xml','xml')">多轴下的多序列</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('混合B.xml','xml')">混合B</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('仪表盘.xml','xml')">仪表盘</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('仪表盘2.xml','xml')">仪表盘2</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('仪表盘3.xml','xml')">仪表盘3</a></p>
+					<p><a href="javascript:void(0);" onclick="loadChart('雷达图.xml','xml')">雷达图</a></p>
+    		</div>
+        <div id="flashContent">
+            <p>
+                To view this page ensure that Adobe Flash Player version 
+                10.1.0 or greater is installed. 
+            </p>
+        </div>
+        
+        <noscript>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="bobochart">
+                <param name="movie" value="bobochart.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#ffffff" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="allowFullScreen" value="true" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="bobochart.swf" width="100%" height="100%">
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#ffffff" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="allowFullScreen" value="true" />
+                <!--<![endif]-->
+                <!--[if gte IE 6]>-->
+                    <p> 
+                        Either scripts and active content are not permitted to run or Adobe Flash Player version
+                        10.1.0 or greater is not installed.
+                    </p>
+                <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflashplayer">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                    </a>
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+        </noscript>     
+   </body>
+</html>

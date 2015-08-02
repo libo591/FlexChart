@@ -1,0 +1,105 @@
+<!-- 线图,区域图 ,柱状图,条形图,散点图,气泡图,雷达图  配置文件 -->
+<!-- 根节点标签，
+	title：主标题文本 ，默认为空
+	subTitle：副标题文本，默认为空 
+	ySuffix：Y轴后缀 ，默认为空
+	xSuffix：X轴后缀 ，默认为空
+	multiSeriesAxis：是否使用多系列轴，默认为false
+	numDiv：雷达图中值的间隔数
+	max：雷达图中最大值
+	min：雷达图中最小值 -->
+<config title='2010年度销售状况' ySuffix="万" subTitle='呈上升趋势'>
+    <axis>
+	    <!-- X轴配置标签，
+		type：轴类型，field表示为分类轴，linear为系列轴
+		title：X轴标题，默认为空 
+		beginValue：系列轴的最小值，当为系列轴时才可设置
+		endValue：系列轴的最大值，当为系列轴时才可设置
+		inc：系列轴的值增量，默认为5 ，，当为系列轴时才可设置
+		needZeroLine：是否绘制零值线，默认为false，，当为系列轴时才可设置 -->
+        <x type="field" title="月份"/>
+        <!-- Y轴配置标签，属性同上-->
+        <y type="linear" title="销售额" beginValue="0" endValue="1000" inc="100" needZeroLine="false"/>
+    </axis>
+    <series>
+    	<!-- 系列绘制标签，配置的顺序要与axis标签下的系列轴配置按顺序一一对应
+    	标签名：要绘制的系列的类型，line：线图 area：区域图 column：柱状图  bar：条形图 marker：散点图 bubble：气泡图 radar：雷达图
+		xField：分类轴数据的key值，用于从data标签中取数据
+		yField：系列轴数据的key值，用于从data标签中取数据 
+		radiusField:气泡图中气泡半径的key值
+		radiusField:气泡图中气泡半径的key值
+		name：系列轴的名称，用于标识 -->
+        <line xField='label' yField='value' name="A地区" />
+    </series>
+    <!-- 数据标签，用于绘制系列 -->
+    <data>
+        <set label='1月' value='279'/>
+        <set label='2月' value='410' />
+        <set label='3月' value='325'/>
+        <set label='4月' value='572'/>
+        <set label='5月' value='629'/>
+        <set label='6月' value='710'/>
+        <set label='7月' value='489'/>
+        <set label='8月' value='635'/>
+        <set label='9月' value='750'/>
+        <set label='10月' value='600'/>
+        <set label='11月' value='760'/>
+        <set label='12月' value='950'/>
+    </data>
+    <!-- 样式标签，可以不设置，则采用默认配置 -->
+    <!-- 整体外观 
+    	borderStyle:表框类型，solid：实体表框 none：无边框
+    	borderColor:表框颜色，
+    	borderRound:表框圆角值
+    	backgroundColor:背景色
+    	backgroundAlpha:背景色透明度-->
+    <style borderStyle="solid" borderColor="0x000000" borderRound="20" backgroundColor="0xffffff" backgroundAlpha="1">
+    	<!-- 主标题外观 
+    	family：字体 size：字号 color：文字颜色 bold：加粗 align：水平对齐 
+    	borderStyle:表框类型，solid：实体表框 none：无边框
+    	borderColor:表框颜色，
+    	borderRound:表框圆角值
+    	backgroundColor:背景色-->
+    	<title family="" size="20" color="0x000000" bold="false" align="center" borderStyle="none" borderColor="0x000000" borderRound="5" backgroundColor="0xffffff"></title>
+    	<!-- 副标题外观  -->
+    	<subTitle family="" size="14" color="0x000000" bold="false" align="" borderStyle="none" borderColor="0x000000" borderRound="0" backgroundColor="0xffffff"></subTitle>
+    	<!-- 图例外观 
+    	family：字体 size：字号 color：文字颜色 bold：加粗 
+    	position：相对于绘图区的位置 top right bottom left
+    	borderStyle:表框类型，solid：实体表框 none：无边框
+    	borderColor:表框颜色，
+    	borderRound:表框圆角值
+    	backgroundColor:背景色-->
+    	<legend family="" size="12" bold="false" position="right" borderStyle="none" borderColor="0x000000" borderRound="0" backgroundColor="0xffffff"></legend>
+    	<!-- 系列外观 
+	    	family：字体 size：字号 color：文字颜色 bold：加粗 
+	    	labelVisiable：是否显示系列值文本
+	    	weight:线宽度（线图，区域图）
+	    	pointType:节点类型（线图，区域图）三角形， 实心圆，方块，菱形
+	    	isFill:是否填充（雷达图）
+	    	lineType:线类型
+	    	lineColor:线颜色-->
+    	<series labelVisiable="false" family="" size="" color="" bold=""
+    			weight="3" pointType="三角形" 
+    			isFill="true" lineType="" lineColor="" />
+    	<!-- 轴外观 
+	    	type：轴类型
+	    	color：轴上文本颜色
+	    	angle:轴上文本倾斜角度
+	    	alarmValues：系列轴的预警值数组-->
+    	<axis type="" color="" angle="" alarmValues=""/>
+    	<!-- 绘图区外观 
+	    	hlines：轴类型
+	    	vlines：轴上文本颜色
+	    	hlinesColor:轴上文本倾斜角度
+	    	vlinesColor：系列轴的预警值数组
+	    	borderStyle:表框类型，solid：实体表框 none：无边框
+    		borderColor:表框颜色，
+    		borderRound:表框圆角值
+    		backgroundColor:背景色,两个值不一样则为渐进色
+    		backgroundAlpha:背景色-->
+    	<graph hlines="true" vlines="false" hlinesColor="0xBEBEBE" vlinesColor="0xff0000" 
+    			borderStyle="solid" borderColor="0xDBDBDB" borderRound="0"
+    			backgroundColor="0x000000,0xffffff" backgroundAlpha="1,1"></graph>
+    </style>
+</config>

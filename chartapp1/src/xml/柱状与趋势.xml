@@ -1,0 +1,21 @@
+<config title='产品销售状况' ySuffix='万'>
+    <axis>
+        <x type="field" title='年份' />
+        <y type="linear" title='销量' beginValue="-500" endValue="1000" inc="100"/>
+        <y type="linear" title='销量' beginValue="-500" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <line xField='label' yField='valueA'/>
+        <column xField='label' yField='valueB'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='2004年' valueA='400' valueB='-200'/>
+        <set label='2005年' valueA='300' valueB='-20'/>
+        <set label='2006年' valueA='250' valueB='60'/>
+        <set label='2007年' valueA='180' valueB='80'/>
+        <set label='2008年' valueA='300' valueB='160'/>
+        <set label='2009年' valueA='400' valueB='200'/>
+        <set label='2010年' valueA='600' valueB='300'/>
+    </data>
+</config>

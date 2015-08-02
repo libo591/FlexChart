@@ -1,0 +1,25 @@
+<config title='04-10年销售业绩' multiSeriesAxis="true">
+    <axis>
+        <x type="field" title='年份'/>
+        <y type="linear" title='利润' beginValue="0" endValue="20" inc="2"/>
+        <y type="linear" title='利润' beginValue="-500" endValue="1000" inc="150"/>
+        <y type="linear" title='利润' beginValue="0" endValue="1000" inc="100"/>
+        <y type="linear" title='利润' beginValue="0" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <area xField='label' yField='valueD' smooth='true'/>
+        <bubble xField='label' yField='valueC' radiusField='valueD'/>
+        <column xField='label' yField='value'/>
+        <line xField='label' yField='valueA' smooth='true'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='2004年' value='270' valueA='400' valueC='-200' valueD='13'/>
+        <set label='2005年' value='400' valueA='300' valueC='-20' valueD='17'/>
+        <set label='2006年' value='300' valueA='250' valueC='60' valueD='14'/>
+        <set label='2007年' value='570' valueA='120' valueC='800' valueD='13'/>
+        <set label='2008年' value='620' valueA='350' valueC='160' valueD='11'/>
+        <set label='2009年' value='710' valueA='400' valueC='600' valueD='18'/>
+        <set label='2010年' value='480' valueA='600' valueC='300' valueD='18'/>
+    </data>
+</config>

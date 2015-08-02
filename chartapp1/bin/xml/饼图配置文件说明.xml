@@ -1,0 +1,18 @@
+<!-- 饼图  配置文件 -->
+<!-- 根节点标签，
+	title：主标题文本 ，默认为空
+	subTitle：副标题文本，默认为空 
+	valueSuffix：值后缀
+	precision：值精度
+	type：图类型 ，pie：饼图 -->
+<config title='2011年全球手机销量' valueSuffix='亿部' precision="2" type="pie">
+	<!-- 数据标签，用于绘制 -->
+	<data>
+		<set label="Nokia" value="4.171"/>
+		<set label="Samsung" value="3.294"/>
+		<set label="Apple" value="0.932"/>
+		<set label="LG" value="0.881"/>
+		<set label="ZTE" value="0.661"/>
+		<set label="Others" value="5.521"/>
+	</data>
+</config>

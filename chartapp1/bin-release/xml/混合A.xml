@@ -1,0 +1,27 @@
+<config ySuffix='万' title='某公司各产品线利润状况'>
+    <axis>
+        <x type="field" title='年度'/>
+        <y type="linear" title='利润' beginValue="-500" endValue="500" inc="100"/>
+        <y type="linear" title='利润' beginValue="0" endValue="1000" inc="100"/>
+        <y type="linear" title='利润' beginValue="-500" endValue="1000" inc="150"/>
+        <y type="linear" title='利润' beginValue="-500" endValue="1000" inc="150"/>
+        <y type="linear" title='利润' beginValue="0" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <stack xField='label' yField='valueC'/>
+        <stack xField='label' yField='valueA'/>
+        <stack xField='label' yField='value'/>
+        <column xField='label' yField='valueD'/>
+        <area xField='label' yField='valueB'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='2004年' value='270' valueA='400' valueB='350' valueC='-200' valueD='300'/>
+        <set label='2005年' value='400' valueA='300' valueB='860' valueC='20' valueD='750'/>
+        <set label='2006年' value='-350' valueA='250' valueB='200' valueC='60' valueD='-350'/>
+        <set label='2007年' value='570' valueA='120' valueB='333' valueC='80' valueD='280'/>
+        <set label='2008年' value='620' valueA='300' valueB='530' valueC='160' valueD='630'/>
+        <set label='2009年' value='710' valueA='400' valueB='125' valueC='200' valueD='820'/>
+        <set label='2010年' value='480' valueA='600' valueB='420' valueC='300' valueD='752'/>
+    </data>
+</config>

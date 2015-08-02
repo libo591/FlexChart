@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.grid.charts.view.TitleLabel"/>
+    <classEntry path="com.grid.charts.parser.ParserFactory"/>
+    <classEntry path="com.grid.charts.parser.IChartParser"/>
+    <classEntry path="com.grid.charts.parser.JSONParser"/>
+    <classEntry path="com.grid.charts.parser.PieXMLParser"/>
+    <classEntry path="com.grid.charts.parser.GaugesXMLParser"/>
+    <classEntry path="com.grid.charts.parser.RadarXMLParser"/>
+    <classEntry path="com.grid.charts.view.chartviews.PieChartView"/>
+    <classEntry path="com.grid.charts.view.chartviews.GaugesChartView"/>
+    <classEntry path="com.grid.charts.view.chartviews.RadarChartView"/>
+    <classEntry path="com.grid.charts.view.chartviews.ChartViewFactory"/>
+    <classEntry path="com.grid.charts.ChartDataLoader"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

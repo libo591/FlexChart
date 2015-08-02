@@ -1,0 +1,14 @@
+<config title='MainTitle' type="radar" numDiv="5" max="10" min="0">
+    <series>
+        <radar xField='label' yField='value'/>
+        <radar xField='label' yField='valueA'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='P1' value='9' valueA='3'/>
+        <set label='P2' value='8' valueA='5'/>
+        <set label='P3' value='9' valueA='4'/>
+        <set label='P4' value='7' valueA='7'/>
+        <set label='P5' value='10' valueA='7'/>
+    </data>
+</config>

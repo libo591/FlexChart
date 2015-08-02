@@ -1,0 +1,26 @@
+<config title='产品销量状况' ySuffix='万' multiSeriesAxis="true">
+    <axis>
+        <x type="field" title='月份' />
+        <y id='a' type="linear" title='A利润' beginValue="0" endValue="10000" inc="1000"/>
+        <y id='b' type="linear" title='B利润' beginValue="-1000" endValue="0" inc="100"/>
+    </axis>
+    <series>
+        <column xField='label' yField='valueA' yAxis='a'/>
+        <column xField='label' yField='valueB' yAxis='b'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='1月' valueA='2790' valueB='-400'/>
+        <set label='2月' valueA='4100' valueB='-300'/>
+        <set label='3月' valueA='3250' valueB='-200'/>
+        <set label='4月' valueA='5720' valueB='-100'/>
+        <set label='5月' valueA='6290' valueB='-300'/>
+        <set label='6月' valueA='7100' valueB='-400'/>
+        <set label='7月' valueA='4890' valueB='-600'/>
+        <set label='8月' valueA='6350' valueB='-800'/>
+        <set label='9月' valueA='7500' valueB='-600'/>
+        <set label='10月' valueA='6000' valueB='-400'/>
+        <set label='11月' valueA='7600' valueB='-350'/>
+        <set label='12月' valueA='9500' valueB='-300'/>
+    </data>
+</config>

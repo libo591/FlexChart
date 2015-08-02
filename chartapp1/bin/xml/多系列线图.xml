@@ -1,0 +1,28 @@
+<config title='2010年产品销量' ySuffix='K' multiSeriesAxis="true">
+    <axis>
+        <x type="field" title='月份' />
+        <y type="linear" title='产量' id='a' beginValue="0" endValue="1000" inc="100"/>
+        <y type="linear" title='产量' id='b' beginValue="0" endValue="10000" inc="1000"/>
+        <y type="linear" title='产量' id='c' beginValue="0" endValue="100" inc="10"/>
+    </axis>
+    <series>
+        <line xField='label' yField='value' yAxis='a' color="0xff0000" alpha="1"/>
+        <line xField='label' yField='valueA' yAxis='b' color="0x00ff00" alpha="1"/>
+        <line xField='label' yField='valueB' yAxis='c' color="0x0000ff" alpha="1"/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='1月' value='279' valueA='1500' valueB='40'/>
+        <set label='2月' value='325' valueA='2000' valueB='45'/>
+        <set label='3月' value='400' valueA='2500' valueB='43'/>
+        <set label='4月' value='572' valueA='3000' valueB='35'/>
+        <set label='5月' value='629' valueA='3500' valueB='36'/>
+        <set label='6月' value='710' valueA='4000' valueB='40'/>
+        <set label='7月' value='750' valueA='5000' valueB='50'/>
+        <set label='8月' value='635' valueA='6000' valueB='60'/>
+        <set label='9月' value='750' valueA='7000' valueB='55'/>
+        <set label='10月' value='800' valueA='8000' valueB='45'/>
+        <set label='11月' value='850' valueA='7000' valueB='40'/>
+        <set label='12月' value='950' valueA='7500' valueB='35'/>
+    </data>
+</config>

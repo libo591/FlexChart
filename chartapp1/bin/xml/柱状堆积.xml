@@ -1,0 +1,28 @@
+<config title='产品销量状况'>
+    <axis>
+        <x type="field" title='年份'/>
+        <y type="linear" title='产量' beginValue="0" endValue="1000" inc="100"/>
+        <y type="linear" title='产量' beginValue="0" endValue="1000" inc="100"/>
+        <y type="linear" title='产量' beginValue="0" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <stack xField='label' yField='valueA'/>
+        <stack xField='label' yField='valueB'/>
+        <stack xField='label' yField='valueC'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='1月' valueC='279' valueA='400' valueB='536'/>
+        <set label='2月' valueC='410' valueA='300' valueB='253'/>
+        <set label='3月' valueC='325' valueA='250' valueB='358'/>
+        <set label='4月' valueC='572' valueA='100' valueB='400'/>
+        <set label='5月' valueC='629' valueA='300' valueB='358'/>
+        <set label='6月' valueC='710' valueA='400' valueB='368'/>
+        <set label='7月' valueC='489' valueA='600' valueB='357'/>
+        <set label='8月' valueC='635' valueA='800' valueB='852'/>
+        <set label='9月' valueC='750' valueA='600' valueB='654'/>
+        <set label='10月' valueC='600' valueA='400' valueB='348'/>
+        <set label='11月' valueC='760' valueA='350' valueB='135'/>
+        <set label='12月' valueC='950' valueA='300' valueB='658'/>
+    </data>
+</config>

@@ -1,0 +1,3 @@
+<config type="gauges">
+	<data min="0" max="180" suffix="度" beginAngle="135" endAngle="45" step="6" stepInStep="3" value="65" />
+</config>

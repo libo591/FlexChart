@@ -1,0 +1,10 @@
+<config title='2011年全球手机销量' valueSuffix='亿部' precision="2" type="pie">
+	<data>
+		<set label="Nokia" value="4.171"/>
+		<set label="Samsung" value="3.294"/>
+		<set label="Apple" value="0.932"/>
+		<set label="LG" value="0.881"/>
+		<set label="ZTE" value="0.661"/>
+		<set label="Others" value="5.521"/>
+	</data>
+</config>

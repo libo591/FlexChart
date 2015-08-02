@@ -1,0 +1,36 @@
+<config title='2010年度销售状况' ySuffix="万" subTitle='呈上升趋势'>
+    <axis>
+        <x type="field" title="月份"/>
+        <y type="linear" title="销售额" beginValue="0" endValue="1000" inc="100" needZeroLine="false"/>
+    </axis>
+    <series>
+        <line xField='label' yField='value' labelDisplay='normal' name="A地区" />
+    </series>
+    <data>
+        <set label='1月' value='279'/>
+        <set label='2月' value='410' />
+        <set label='3月' value='325'/>
+        <set label='4月' value='572'/>
+        <set label='5月' value='629'/>
+        <set label='6月' value='710'/>
+        <set label='7月' value='489'/>
+        <set label='8月' value='635'/>
+        <set label='9月' value='750'/>
+        <set label='10月' value='600'/>
+        <set label='11月' value='760'/>
+        <set label='12月' value='950'/>
+    </data>
+    <!-- 整体外观 -->
+    <style borderStyle="solid" borderColor="0x000000" borderRound="20" backgroundColor="0xffffff" backgroundAlpha="1">
+    	<title family="" size="20" color="0x000000" bold="false" align="center" borderStyle="none" borderColor="0x000000" borderRound="5" backgroundColor="0xffffff"></title>
+    	<subTitle family="" size="14" color="0x000000" bold="false" align="" borderStyle="none" borderColor="0x000000" borderRound="0" backgroundColor="0xffffff"></subTitle>
+    	<legend family="" size="12" bold="false" position="right" borderStyle="none" borderColor="0x000000" borderRound="0" backgroundColor="0xffffff"></legend>
+    	<series labelVisiable="false" family="" size="" color="" bold="" italic="" 
+    			weight="3" pointType="三角形" 
+    			isFill="true" lineType="" lineColor="" /><!-- 实心圆，方块，菱形 -->
+    	<axis type="" color="" angle="" alarmValues=""/>
+    	<graph hlines="true" vlines="false" hlinesColor="0xBEBEBE" vlinesColor="0xff0000" 
+    			borderStyle="solid" borderColor="0xDBDBDB" borderRound="0"
+    			backgroundColor="0x000000,0xffffff" backgroundAlpha="1,1"></graph>
+    </style>
+</config>

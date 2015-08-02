@@ -1,0 +1,26 @@
+<config title='数值分布'>
+    <axis>
+        <x type="field" title="数值项"/>
+        <y type="linear" title="分布值" beginValue="0" endValue="1000" inc="100"/>
+        <y type="linear" title="分布值" beginValue="0" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <bubble xField='label' yField='valueA' radiusField='radiusA'/>
+        <bubble xField='label' yField='valueB' radiusField='radiusB'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='1' valueA='279'  valueB='120' radiusA='23' radiusB='66'/>
+        <set label='2' valueA='410' valueB='380' radiusA='32' radiusB='52'/>
+        <set label='3' valueA='325' valueB='279' radiusA='65' radiusB='43'/>
+        <set label='4' valueA='572' valueB='630' radiusA='25' radiusB='11'/>
+        <set label='5' valueA='629' valueB='326' radiusA='20' radiusB='32'/>
+        <set label='6' valueA='710' valueB='920' radiusA='5' radiusB='20'/>
+        <set label='7' valueA='489' valueB='302' radiusA='52' radiusB='6'/>
+        <set label='8' valueA='635' valueB='588' radiusA='45' radiusB='52'/>
+        <set label='9' valueA='750' valueB='133' radiusA='20' radiusB='13'/>
+        <set label='10' valueA='600' valueB='675' radiusA='45' radiusB='16'/>
+        <set label='11' valueA='760' valueB='426' radiusA='32' radiusB='37'/>
+        <set label='12' valueA='950' valueB='359' radiusA='30' radiusB='10'/>
+    </data>
+</config>

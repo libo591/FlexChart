@@ -1,0 +1,17 @@
+<!-- 仪表盘图  配置文件 -->
+<!-- 根节点标签，
+	title：主标题文本 ，默认为空
+	subTitle：副标题文本，默认为空 
+	type：图类型 ，gauges：仪表盘图 -->
+<config type="gauges">
+	<!-- 数据标签，用于绘制
+	min：最小值
+	max：最大值
+	suffix：值单位
+	beginAngle：起始角度，X轴正方向为0度
+	endAngle：结束角度
+	step：角度划分的大间隔
+	stepInStep：大间隔中的小间隔
+	value：当前值 -->
+	<data min="0" max="180" suffix="度" beginAngle="135" endAngle="45" step="6" stepInStep="3" value="65" />
+</config>

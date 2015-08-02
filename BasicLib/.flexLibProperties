@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.basic.loading.Loading"/>
+    <classEntry path="com.basic.loading.LoadingManager"/>
+    <classEntry path="com.boboeye.basic.BasicConst"/>
+    <classEntry path="com.boboeye.basic.LicInfo"/>
+    <classEntry path="com.boboeye.basic.PriceUtil"/>
+    <classEntry path="com.boboeye.basic.WebUtils"/>
+    <classEntry path="com.boboeye.basic.date.DateParser"/>
+    <classEntry path="com.basic.cursor.CursorManager"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

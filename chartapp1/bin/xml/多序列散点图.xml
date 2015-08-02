@@ -1,0 +1,26 @@
+<config title='数值分布' >
+    <axis>
+        <x type="field" title='数值项' />
+        <y type="linear" title='分布值' beginValue="0" endValue="1000" inc="100"/>
+        <y type="linear" title='分布值' beginValue="0" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <marker xField='label' yField='valueA'/>
+        <marker xField='label' yField='valueB'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='1月' valueB='279' valueA='400'/>
+        <set label='2月' valueB='410' valueA='300'/>
+        <set label='3月' valueB='325' valueA='250'/>
+        <set label='4月' valueB='572' valueA='100'/>
+        <set label='5月' valueB='629' valueA='300'/>
+        <set label='6月' valueB='710' valueA='400'/>
+        <set label='7月' valueB='489' valueA='600'/>
+        <set label='8月' valueB='635' valueA='800'/>
+        <set label='9月' valueB='750' valueA='600'/>
+        <set label='10月' valueB='600' valueA='400'/>
+        <set label='11月' valueB='760' valueA='350'/>
+        <set label='12月' valueB='950' valueA='300'/>
+    </data>
+</config>

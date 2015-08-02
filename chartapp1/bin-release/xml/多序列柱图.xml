@@ -1,0 +1,26 @@
+<config title='产品销量状况' ySuffix='K'>
+    <axis>
+        <x type="field" title='月份' />
+        <y type="linear" title='产量' displayName='实际产量' beginValue="0" endValue="1000" inc="100"/>
+        <y type="linear" title='产量' displayName='实际产量' beginValue="0" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <column xField='label' yField='value'/>
+        <column xField='label' yField='valueA'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='1月' value='279' valueA='400'/>
+        <set label='2月' value='410' valueA='300'/>
+        <set label='3月' value='325' valueA='250'/>
+        <set label='4月' value='572' valueA='100'/>
+        <set label='5月' value='629' valueA='300'/>
+        <set label='6月' value='710' valueA='400'/>
+        <set label='7月' value='489' valueA='600'/>
+        <set label='8月' value='635' valueA='800'/>
+        <set label='9月' value='750' valueA='600'/>
+        <set label='10月' value='600' valueA='400'/>
+        <set label='11月' value='760' valueA='350'/>
+        <set label='12月' value='950' valueA='300'/>
+    </data>
+</config>

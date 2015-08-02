@@ -1,0 +1,23 @@
+<config title='2010年度销售状况' ySuffix="万">
+    <axis>
+        <x type="field" title="月份"/>
+        <y type="linear" title="销售额"  beginValue="-1000" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <area xField='label' yField='value' smooth="true"/>
+    </series>
+    <data>
+        <set label='1月' value='279'/>
+        <set label='2月' value='410' />
+        <set label='3月' value='325'/>
+        <set label='4月' value='572'/>
+        <set label='5月' value='629'/>
+        <set label='6月' value='-100'/>
+        <set label='7月' value='-150'/>
+        <set label='8月' value='-350'/>
+        <set label='9月' value='-200'/>
+        <set label='10月' value='-390'/>
+        <set label='11月' value='-500'/>
+        <set label='12月' value='-450'/>
+    </data>
+</config>

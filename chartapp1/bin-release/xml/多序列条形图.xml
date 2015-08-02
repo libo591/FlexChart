@@ -1,0 +1,20 @@
+<config title='产品销量状况' xSuffix='K'>
+    <axis>
+        <y type="field" title='月份' />
+        <x type="linear" title='产量' beginValue="0" endValue="1000" inc="100"/>
+        <x type="linear" title='产量' beginValue="0" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <bar xField='value' yField='label'/>
+        <bar xField='valueB' yField='label'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='1月' value='279' valueB='400'/>
+        <set label='2月' value='410' valueB='300'/>
+        <set label='3月' value='325' valueB='250'/>
+        <set label='4月' value='572' valueB='100'/>
+        <set label='5月' value='629' valueB='300'/>
+        <set label='6月' value='710' valueB='400'/>
+    </data>
+</config>

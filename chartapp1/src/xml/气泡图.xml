@@ -1,0 +1,23 @@
+<config title='数值分布'>
+    <axis>
+        <x type="field" title="数值项"/>
+        <y type="linear" title="分布值" beginValue="0" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <bubble xField='label' yField='value' radiusField='radius' zDisplayName='气泡值'/>
+    </series>
+    <data>
+        <set label='1' value='279' radius='23'/>
+        <set label='2' value='410' radius='32'/>
+        <set label='3' value='325' radius='65'/>
+        <set label='4' value='572' radius='25'/>
+        <set label='5' value='629' radius='20'/>
+        <set label='6' value='710' radius='5'/>
+        <set label='7' value='489' radius='52'/>
+        <set label='8' value='635' radius='45'/>
+        <set label='9' value='750' radius='20'/>
+        <set label='10' value='600' radius='45'/>
+        <set label='11' value='760' radius='32'/>
+        <set label='12' value='950' radius='30'/>
+    </data>
+</config>

@@ -1,0 +1,26 @@
+<config title='2010年产品销量' multiSeriesAxis="true">
+    <axis>
+        <x type="field" title='月份'/>
+        <y id='a' type="linear" title='产量' beginValue="0" endValue="1000" inc="100"/>
+        <y id='b' type="linear" title='销售额' beginValue="0" endValue="10000" inc="1000"/>
+    </axis>
+    <series>
+        <line xField='label' yField='valueA' yAxis='a'/>
+        <column xField='label' yField='valueB' yAxis='b'/>
+    </series>
+    <legend enable='true'/>
+    <data>
+        <set label='1月' valueA='279' valueB='4000'/>
+        <set label='2月' valueA='410' valueB='2000'/>
+        <set label='3月' valueA='325' valueB='1500'/>
+        <set label='4月' valueA='572' valueB='1000'/>
+        <set label='5月' valueA='629' valueB='3000'/>
+        <set label='6月' valueA='710' valueB='4000'/>
+        <set label='7月' valueA='489' valueB='6000'/>
+        <set label='8月' valueA='635' valueB='8000'/>
+        <set label='9月' valueA='750' valueB='6000'/>
+        <set label='10月' valueA='600' valueB='4000'/>
+        <set label='11月' valueA='760' valueB='3500'/>
+        <set label='12月' valueA='950' valueB='3000'/>
+    </data>
+</config>

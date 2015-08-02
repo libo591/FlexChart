@@ -1,0 +1,23 @@
+<config title='数值分布'>
+    <axis>
+        <x type='field' title='数值项'/>
+        <y type='linear' title='分布数值' beginValue="-1000" endValue="1000" inc="100"/>
+    </axis>
+    <series>
+        <column xField='label' yField='value'/>
+    </series>
+    <data>
+        <set label='1' value='279'/>
+        <set label='2' value='-410' />
+        <set label='3' value='325'/>
+        <set label='4' value='-572'/>
+        <set label='5' value='629'/>
+        <set label='6' value='-710'/>
+        <set label='7' value='-489'/>
+        <set label='8' value='635'/>
+        <set label='9' value='750'/>
+        <set label='10' value='600'/>
+        <set label='11' value='-760'/>
+        <set label='12' value='-950'/>
+    </data>
+</config>
