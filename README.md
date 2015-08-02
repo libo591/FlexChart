@@ -19,8 +19,14 @@ chart的核心库项目，实际使用时，使用此类库编译出来的swc文
 chart的应用示例项目，简单展示了使用chart的过程
 
 ## 代码示例
-
-- 根据一个xml的配置文件，展现chart
+（1）首先，由于使用了MornUILib，你需要初始加载一些基础的swf，以便MornUILib能正常工作
+```
+//初始化组件
+App.init(this);
+//加载资源			
+App.loader.loadAssets(["assets/comp.swf"],new Handler(loadComplete));
+```
+（2）其次，得到xml的配置文件，并调用相关api展现此配置文件
 - 其中ChartDataLoader.loadData(data,this,w,h);的四个参数的含义为：
 - @param data  xml配置信息
 - @param this 指定要加载chart的父容器
@@ -40,5 +46,10 @@ chart展现所需的各种类型的配置文件，具体可参考chartapp1/xml�
 - （1）首先编译BasicLib，得到BasicLib.swc
 - （2）将BasicLib.swc放到 chartslib1/libs目录下，并编译chartslib1项目，得到chartslib1.swc
 - （3）将chartslib1.swc放到你的应用的libs目录下，使用即可
+
 ## 感谢
-MonsterDebugger.swc，MornUILib.swc，as3corelib.swc，tweener.swc
+
+- MonsterDebugger.swc
+- MornUILib.swc
+- as3corelib.swc
+- tweener.swc
